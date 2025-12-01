@@ -1,35 +1,63 @@
-# nodemcu-01
+# Nodemcu-01
 
-## I detta projekt kommer jag visa hur man får en LED att blinka på NodeMCU (ESP8266)
+## Introduktion
+Jag ska visa hur man skriver ett enkelt blinkprogram. Syftet är att kunna förstå hur Arduino IDE fungerar och hur man enkelt styr en innbyggd LED med kod. Här nedan syns en bild på ett Plusivo Kit.
 
-## Steg 1. Konfigurera Board Manager
-Börja med att klicka dig in på Arduino IDE. Gå till File → Preferemces. I fältet ADditional Boards Manager URL:s, lägg till ESP8266-URL:en. Detta gör att IDE:n kan hämta samt installera ESP8266-plattformens definitionsfilter.
+<img width="1590" height="1590" alt="image" src="https://github.com/user-attachments/assets/0ff604d8-1bb9-47c0-bb10-22dc3f52aa5a" />
 
-## Steg 2. Insallera ESP8266-komponenter
-Installera mikroprocessen (ESP8266) på Arduino IDE genom att skriva in det under boards manager i searchboxen 
+## Vad är Mikroprocessor?
+Mikroprocessor fungerar som en minidator och kan programmeras så att den styr saker t.ex. en lampa eller en sensor. Den har även en WiFI och kan kopplas till internet. Med hjälp av Aurdino IDE kan man programmera den. Här är en bild på en mikroprocess ( ESP8266) som ska användas under projektet. 
 
-## Steg 3.
-I nästa steg väljer du board och port och trycker sedan på Generic ESP8266 module, sedan klistrar in koden som du hade kopierat 
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/ed16b46a-75d4-444c-9f71-faa2246036b3" />
 
-## Steg 4.
-Du ska öppna upp Arduino IDE, och sedan hämta den färdiga BLINK programmet du har.
-File - 01.Basics - Blink
+# Kort om Arduino och hur den fungerar
 
-## Steg 5. 
-Nästa steg är att koppa in NodeMCU. Använd USB-Kabeln från pulsivo-kitet.
+ Programmet består av två basfunktioner, alltså två delar
+```cpp
+ setup()
+ ```
+ - Den kör en gång när programmet startar
+```cpp
+loop()
+```
+  - Den kör om och om igen
+  - Den tänder och släcker LED-lampan
 
-## Steg 6. 
-Ladda upp programmet. Programmet komplieras och laddas upp.
+## Portinitialisering 
+Behövs för att använda LED-lampan på NodeMCU måste vi berätta att pinnen ska fungera som utgång.
+```cpp
+pinMODe (LED_ outBUILTIN, OUTPUT);
+```
 
-## Steg 7.
-Lampan blinkar.
+Hur man installerar Arduino IDE och får ett fungerande Blink-program
 
-Portinitialisering - För att använda LED-lampan på NodeMCU måste vi tala om att pinnen ska fungera som utgång 
+### Steg 1 – Konfigurera Board Manager
+Öppna Arduino IDE och gå till File → Preferences. 
+
+### Steg 2 – Installera ESP8266-komponenter
+Gå till Tools → Board → Boards Manager. Sök efter ESP8266 och installera den.
+
+### Steg 3 – Val av board och seriell port
+Under Tools → Board → boards manager
+
+### Steg 4 – Ladda Blink-exemplet
+Öppna Arduino-exemplets Blink-fil via: File → Examples → 01.Basics → Blink.
+
+### Steg 5 – Koppla in hårdvaran
+Anslut NodeMCU till datorn via USB. ESP8266 har inbyggd USB-till-seriell omvandlare som gör uppladdning enkel.
+
+### Steg 6 – Kompilera och ladda upp
+Tryck på Upload. Arduino IDE kompilerar koden till ESP8266-format och skickar den över USB. Under uppladdningen kan LED:n på kortet blinka snabbt.
+
+### Steg 7 – Funktionstest
+När uppladdningen är klar startar programmet automatiskt. LED:n kommer nu blinka varje halv sekund.
+
+Mitt försök:
+<img width="480" height="640" alt="image" src="https://github.com/user-attachments/assets/a3680292-daa4-4d65-98b4-26bd59aa24a9" />
 
 
 
-# Här ser ni ett Exempel på en kod:
-# Kod
+## Kod
 ```cpp
 int ledPin = D4;
 
