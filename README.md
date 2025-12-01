@@ -29,7 +29,7 @@ Behövs för att använda LED-lampan på NodeMCU måste vi berätta att pinnen s
 pinMODe (LED_ outBUILTIN, OUTPUT);
 ```
 
-Hur man installerar Arduino IDE och får ett fungerande Blink-program
+## Hur man installerar Arduino IDE och får ett fungerande Blink-program
 
 ### Steg 1 – Konfigurera Board Manager
 Öppna Arduino IDE och gå till File → Preferences. 
