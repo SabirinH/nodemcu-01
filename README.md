@@ -25,7 +25,7 @@ loop()
   - Den tänder och släcker LED-lampan
 
 ## Portinitialisering 
-Behövs för att använda LED-lampan på NodeMCU måste vi berätta att pinnen ska fungera som utgång.
+Behövs för att använda LED-lampan på NodeMCU och för att pinnen ska fungera som utgång.
 ```cpp
 pinMODe (LED_ outBUILTIN, OUTPUT);
 ```
