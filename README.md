@@ -24,8 +24,16 @@ loop()
   - Den kör om och om igen
   - Den tänder och släcker LED-lampan
 
+    
+<img width="1024" height="640" alt="image" src="https://github.com/user-attachments/assets/60a96fb9-6c60-4cf9-a396-8e8762a2b797" />
+
+
+
 ## Portinitialisering 
-Behövs för att använda LED-lampan på NodeMCU och för att pinnen ska fungera som utgång.
+Portinitialisering är när man talar om för en dator, mikrokontroller eller ett program vilken port som ska användas och hur den ska fungera.
+Det är alltså ett sätt att “göra porten redo” innan den används.
+Behövs för att LED-lampan på NodeMCU ska fungera.
+
 ```cpp
 pinMODe (LED_ outBUILTIN, OUTPUT);
 ```
