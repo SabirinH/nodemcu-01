@@ -8,7 +8,8 @@ Jag ska visa hur man skriver ett enkelt blinkprogram. Syftet är att kunna förs
 ## Vad är Mikroprocessor?
 Mikroprocessor fungerar som en minidator och kan programmeras så att den styr saker t.ex. en lampa eller en sensor. Den har även en WiFI och kan kopplas till internet. Med hjälp av Aurdino IDE kan man programmera den. Här är en bild på en mikroprocess ( ESP8266) som ska användas under projektet. 
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/ed16b46a-75d4-444c-9f71-faa2246036b3" />
+<img width="3000" height="3000" alt="image" src="https://github.com/user-attachments/assets/558cbb8f-180e-422c-a190-e606c9ad2e6d" />
+
 
 # Kort om Arduino och hur den fungerar
 
