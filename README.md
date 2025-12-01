@@ -53,7 +53,8 @@ Tryck på Upload. Arduino IDE kompilerar koden till ESP8266-format och skickar d
 ### Steg 7 – Funktionstest
 När uppladdningen är klar startar programmet automatiskt. LED:n kommer nu blinka varje halv sekund.
 
-Mitt försök:
+### Mitt försök:
+
 <img width="480" height="640" alt="image" src="https://github.com/user-attachments/assets/a3680292-daa4-4d65-98b4-26bd59aa24a9" />
 
 
