@@ -6,7 +6,7 @@ Jag ska visa hur man skriver ett enkelt blinkprogram. Syftet är att kunna förs
 <img width="1590" height="1590" alt="image" src="https://github.com/user-attachments/assets/0ff604d8-1bb9-47c0-bb10-22dc3f52aa5a" />
 
 ## Vad är Mikroprocessor?
-Mikroprocessor fungerar som en minidator och kan programmeras så att den styr saker t.ex. en lampa eller en sensor. Den har även en WiFI och kan kopplas till internet. Med hjälp av Aurdino IDE kan man programmera den. Här är en bild på en mikroprocess ( ESP8266) som ska användas under projektet. 
+Mikroprocessor fungerar som en minidator och kan programmeras så att den styr saker t.ex. en lampa eller en sensor. Den har även en WiFi och kan kopplas till internet. Med hjälp av Aurdino IDE kan man programmera den. Här är en bild på en mikroprocess ( ESP8266) som ska användas under projektet. 
 
 <img width="3000" height="3000" alt="image" src="https://github.com/user-attachments/assets/558cbb8f-180e-422c-a190-e606c9ad2e6d" />
 
@@ -40,26 +40,27 @@ pinMode(LED_BUILTIN, OUTPUT);
 
 ## Hur man installerar Arduino IDE och får ett fungerande Blink-program
 
-### Steg 1 – Konfigurera Board Manager
-Öppna Arduino IDE och gå till File → Preferences. 
+### Steg 1 – Konfiguera Board Manager
+Öppna Arduino IDE och gå sedan till File → Preference.
 
-### Steg 2 – Installera ESP8266-komponenter
-Gå till Tools → Board → Boards Manager. Sök efter ESP8266 och installera den.
+### Steg 2 – Installera ESP8266-komponenter 
+Gå till Tools → Board → Boards Manager. Sen söker du efter ESP8266 och installera den. 
 
-### Steg 3 – Val av board och seriell port
-Under Tools → Board → boards manager
+### Steg 3 – Val av board och seriell port 
+Under Tools → Board → Boards Manager
 
 ### Steg 4 – Ladda Blink-exemplet
-Öppna Arduino-exemplets Blink-fil via: File → Examples → 01.Basics → Blink.
+öppna Arduino-exemplets Blink-fil via:
+File → Examples → 0.1Basics → Blink.
 
 ### Steg 5 – Koppla in hårdvaran
-Anslut NodeMCU till datorn via USB. ESP8266 har inbyggd USB-till-seriell omvandlare som gör uppladdning enkel.
+Anslut NodeMCU till datorn via USB. ESP8266 har inbyggd USB-till-seriell omvandlare som uppladdning enkel. 
 
-### Steg 6 – Kompilera och ladda upp
-Tryck på Upload. Arduino IDE kompilerar koden till ESP8266-format och skickar den över USB. Under uppladdningen kan LED:n på kortet blinka snabbt.
+### Steg 6 – Kompilera och ladda upp 
+Tryck på Upload. Arduino IDE kompilerar koden till ESP8266-format och skickar den över USB. Under uppladdningen kan LED:n på kortet blinka snabbt. 
 
 ### Steg 7 – Funktionstest
-När uppladdningen är klar startar programmet automatiskt. LED:n kommer nu blinka varje halv sekund.
+När uppladdningen är klar startar programmet automatiskt. LED:n kommer nu blinka varje halv sekund. 
 
 ### Mitt försök:
 
