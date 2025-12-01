@@ -2,10 +2,10 @@
 
 ## I detta projekt kommer jag visa hur man får en LED att blinka på NodeMCU (ESP8266)
 
-## Steg 1. 
-Börja med att klicka dig in på Arduino IDE. Sedan klickar du på Prefrensces och kopierar en kod som du hittar i Additional boards manager URLs
+## Steg 1. Konfigurera Board Manager
+Börja med att klicka dig in på Arduino IDE. Gå till File → Preferemces. I fältet ADditional Boards Manager URL:s, lägg till ESP8266-URL:en. Detta gör att IDE:n kan hämta samt installera ESP8266-plattformens definitionsfilter.
 
-## Steg 2. 
+## Steg 2. Insallera ESP8266-komponenter
 Installera ESP8266 på Arduino IDE genom att skriva in det under boards manager i searchboxen 
 
 ## Steg 3.
