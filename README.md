@@ -22,7 +22,7 @@ Mikroprocessor fungerar som en minidator och kan programmeras så att den styr s
 loop()
 ```
   - Den kör om och om igen
-  - Den tänder och släcker LED-lampan
+  
 
     
 <img width="1024" height="640" alt="image" src="https://github.com/user-attachments/assets/60a96fb9-6c60-4cf9-a396-8e8762a2b797" />
@@ -35,7 +35,7 @@ Det är alltså ett sätt att “göra porten redo” innan den används.
 Behövs för att LED-lampan på NodeMCU ska fungera.
 
 ```cpp
-pinMODe (LED_ outBUILTIN, OUTPUT);
+pinMode(LED_BUILTIN, OUTPUT);
 ```
 
 ## Hur man installerar Arduino IDE och får ett fungerande Blink-program
